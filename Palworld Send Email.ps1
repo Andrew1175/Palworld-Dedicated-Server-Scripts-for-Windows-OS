@@ -1,6 +1,5 @@
 $User = "your_email@domain.com"
-$File = "C:\EmailPassword.txt"
-$cred=New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, (Get-Content $File | ConvertTo-SecureString)
+$Password = "Your_Password"
 $EmailTo = "your_email@domain.com"
 $EmailFrom = "your_email@domain.com"
 $Subject = "Palworld Server Crash"
@@ -9,5 +8,5 @@ $SMTPServer ="smtp.gmail.com"
 $SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body)
 $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 $SMTPClient.EnableSsl = $true
-$SMTPClient.Credentials = New-Object System.Net.NetworkCredential($cred.UserName, $cred.Password);
+$SMTPClient.Credentials = New-Object System.Net.NetworkCredential($User, $Password);
 $SMTPClient.Send($SMTPMessage)
