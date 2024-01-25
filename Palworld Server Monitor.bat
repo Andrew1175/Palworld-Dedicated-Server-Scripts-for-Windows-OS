@@ -4,7 +4,7 @@ set task1=PalServer-Win64-Test-Cmd
 tasklist | find /i "%task1%" > nul
 if %errorlevel% neq 0 (
     echo %task1% is not running. Starting...
-	call "F:\palworld\Start Server.bat"
+	call "F:\Directory\Input\Here\Start Server.bat"
 	echo Sending email notification
 	Powershell.exe -File "C:\Input\Directory\Here\Palworld Send Email.ps1"
 	echo Email Sent
