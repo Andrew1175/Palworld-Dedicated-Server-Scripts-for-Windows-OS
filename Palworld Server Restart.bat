@@ -1,11 +1,11 @@
-echo Saving Palworld Server... && C:\Users\Drew\Documents\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "save"
+echo Saving Palworld Server... && C:\Directory\Input\Here\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "save"
 echo Palworld server Saved...
 timeout 5
-echo  Shutting Down Palworld Server... && C:\Users\Drew\Documents\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "shutdown 60 The_server_will_be_restarting_in_60_seconds"
+echo  Shutting Down Palworld Server... && C:\Directory\Input\Here\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "shutdown 60 The_server_will_be_restarting_in_60_seconds"
 timeout 30
-echo Sending Restart Update Message... && C:\Users\Drew\Documents\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "broadcast The_server_will_be_restarting_in_30_seconds"
+echo Sending Restart Update Message... && C:\Directory\Input\Here\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "broadcast The_server_will_be_restarting_in_30_seconds"
 timeout 20
-echo Sending Restart Update Message... && C:\Users\Drew\Documents\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "broadcast The_server_will_be_restarting_in_10_seconds"
+echo Sending Restart Update Message... && C:\Directory\Input\Here\ARRCON-3.3.7-Windows\ARRCON.exe -H 127.0.0.1 -P 25575 -p AdminPassword "broadcast The_server_will_be_restarting_in_10_seconds"
 timeout 20
 echo Palworld Server Was Shutdown. Ending residual processes...
 set task1=PalServer-Win64-Test-Cmd
@@ -19,7 +19,7 @@ if errorlevel 1 (
     echo Process ended. Starting the Server...
 )
 timeout 5
-call "F:\palworld\Start Server.bat"
+call "F:\Directory\Input\Here\Start Server.bat"
 echo Palworld Server Started.
 echo Exiting in 5 seconds...
 timeout 5
