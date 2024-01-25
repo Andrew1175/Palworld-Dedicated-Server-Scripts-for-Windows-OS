@@ -1,7 +1,7 @@
 # Palworld-Dedicated-Server-Scripts-for-Windows-OS
 These are scripts that you can use to help manage your Palworld dedicated server.
 
-The first script saves, shuts down, sends periodic messages until the shutdown, and then restarts the server.
+The first script (Palworld Server Restart.bat) saves, shuts down, sends periodic messages until the shutdown, and then restarts the server.
 
 Requirements:
   - ARRCON - https://github.com/radj307/ARRCON
