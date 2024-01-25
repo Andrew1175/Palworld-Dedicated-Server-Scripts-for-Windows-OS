@@ -13,7 +13,7 @@ Notes for the first script:
   - Change the directory where your .bat file resides that starts your server.
   - You can then use Windows Task Scheduler to run this every 12 hours or whatever you prefer. (I run it every 4 hours due to a memory leak I've been seeing)
 
-The second script checks to see if the Palworld server service is running. If it detects it's running nothing is done. If it detects it isn't running then it runs your .bat file that starts your server and then sends an email notification alerting you that the server was down.
+The second script (Palworld Server Monitor.bat) checks to see if the Palworld server service is running. If it detects it's running nothing is done. If it detects it isn't running then it runs your .bat file that starts your server and then sends an email notification alerting you that the server was down.
 
 Notes for the second script:
   - Change the directory where your .bat file resides that starts your server.
